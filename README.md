@@ -26,10 +26,8 @@ npm start
       url: http://127.0.0.1:4701/static/TypedCaptions.js
       dataChannels:
         - name: typed-captions-data-channel
-          writePermission: ['moderator','presenter']
-          deletePermission:
-              - moderator
-              - sender
+          pushPermission: ['moderator']
+          replaceOrDeletePermission: ['moderator']
 ```
 
 ## Building the Plugin
@@ -55,10 +53,8 @@ public:
       url: <<PLUGIN_URL>>
       dataChannels:
         - name: typed-captions-data-channel
-          writePermission: ['moderator','presenter']
-          deletePermission:
-              - moderator
-              - sender
+          pushPermission: ['moderator']
+          replaceOrDeletePermission: ['moderator']
   ... // All other configurations
 ```
 
