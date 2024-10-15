@@ -42,10 +42,11 @@ function TypedCaptionsModal(props: TypedCaptionsModalProps) {
   const [errorMessage, setErrorMessage] = React.useState('');
 
   React.useEffect(() => {
-    const speechVoices = getSpeechVoices();
-    setAvailableLocales(AVAILABLE_LOCALES.filter(
-      (availableLocale: Locale) => speechVoices.includes(availableLocale?.locale),
-    ));
+//    const speechVoices = getSpeechVoices();
+//    setAvailableLocales(AVAILABLE_LOCALES.filter(
+//      (availableLocale: Locale) => speechVoices.includes(availableLocale?.locale),
+//    ));
+    setAvailableLocales(AVAILABLE_LOCALES); // just use plugin-configured locales
     return () => {
       setIsOpen(false);
       setAvailableLocales([]);
