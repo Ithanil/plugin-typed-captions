@@ -1,0 +1,13 @@
+{
+  "requiredSdkVersion": "~0.0.59",
+  "name": "TypedCaptions",
+  "javascriptEntrypointUrl": "TypedCaptions.js",
+  "dataChannels": [
+      {
+          "name": "typed-captions-data-channel",
+          "pushPermission": ["moderator"],
+          "replaceOrDeletePermission": ["moderator"]
+      }
+  ]
+}
+
