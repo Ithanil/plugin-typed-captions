@@ -56,6 +56,7 @@ function TypedCaptions(
                 />
               </React.StrictMode>,
             );
+            return root;
           },
         }));
       pluginApi.setGenericContentItems(sidekickMenuComponentList);
